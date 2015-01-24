@@ -8,7 +8,7 @@ public class CharacterMovement : MonoBehaviour {
 
 	public float speed = 15.0f;
 	public float jumpSpeed = 30.0f;
-	public float rotSpeed = 1.0f;
+	public float[] Rots;
 
 
 	public bool squished = false;
@@ -30,7 +30,12 @@ public class CharacterMovement : MonoBehaviour {
 	void Update() {
 		anim.SetBool ("falling", !isGrounded);
 		anim.SetBool ("squished", stuckTo != null);
-
+		if(Input.GetKeyDown(KeyCode.Q)) {
+			world.transform.RotateAround (transform.position, Vector3.forward, -45);
+		}
+		if(Input.GetKeyDown(KeyCode.E)) {
+			world.transform.RotateAround (transform.position, Vector3.forward, 45);
+        }
 	}
 
 	// Update is called once per frame
@@ -46,7 +51,6 @@ public class CharacterMovement : MonoBehaviour {
 			rigidbody2D.velocity = new Vector2(speed * horizontal,
 			/*jumpSpeed * Input.GetAxis("Jump")*/rigidbody2D.velocity.y); // no more jump :'(
 		}
-		world.transform.RotateAround (transform.position, Vector3.forward, rotSpeed * Input.GetAxis ("Rotation"));
 		if(stuckTo) {
 			transform.rotation = Quaternion.identity;
 		}
