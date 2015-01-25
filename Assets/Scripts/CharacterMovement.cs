@@ -50,7 +50,11 @@ public class CharacterMovement : MonoBehaviour {
 		int idx1 = ((Mathf.FloorToInt (rotation) % Dirs.Length) + Dirs.Length) % Dirs.Length;
 		int idx2 = (((idx1 + 1) % Dirs.Length) + Dirs.Length) % Dirs.Length;
 		transform.up = Vector3.Lerp (Dirs [idx1], Dirs [idx2], rotation - Mathf.Floor(rotation));
-
+		if(Vector3.Dot(transform.forward,Vector3.forward) < 0.0f) {
+			Vector3 rot = transform.localEulerAngles;
+			rot.y = 0;
+			transform.localEulerAngles = rot;
+		}
 
 	}
 
