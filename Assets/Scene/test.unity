@@ -724,7 +724,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1025657834}
   - 50: {fileID: 1025657835}
-  - 231: {fileID: 1025657837}
   - 114: {fileID: 1025657836}
   - 232: {fileID: 1025657838}
   m_Layer: 14
@@ -774,21 +773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce5c239f399a34393b26da151c1bc6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!231 &1025657837
-SpringJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 23103892, guid: 5d09a8ac3c8a9479c94fa800ddfe1740,
-    type: 2}
-  m_PrefabInternal: {fileID: 389953867}
-  m_GameObject: {fileID: 1025657833}
-  m_Enabled: 0
-  m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 1844497189}
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 2
-  m_DampingRatio: 1
-  m_Frequency: 0
 --- !u!232 &1025657838
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -869,6 +853,8 @@ GameObject:
   - 23: {fileID: 1109527411}
   - 114: {fileID: 1109527410}
   - 114: {fileID: 1109527409}
+  - 114: {fileID: 1109527414}
+  - 82: {fileID: 1109527413}
   m_Layer: 9
   m_Name: Goo
   m_TagString: Untagged
@@ -955,6 +941,77 @@ MeshFilter:
   m_PrefabInternal: {fileID: 960000985}
   m_GameObject: {fileID: 1109527406}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1109527413
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8296312, guid: 4b27a7640ec6f499b9b36fc1529affc4,
+    type: 2}
+  m_PrefabInternal: {fileID: 960000985}
+  m_GameObject: {fileID: 1109527406}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 76cdda7fd92492946aa26c451f8129e1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &1109527414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11488054, guid: 4b27a7640ec6f499b9b36fc1529affc4,
+    type: 2}
+  m_PrefabInternal: {fileID: 960000985}
+  m_GameObject: {fileID: 1109527406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be9bfeca6cc99164c839e5c6973bf12a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1449145294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,9 +1497,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1471006009}
   - 50: {fileID: 1471006010}
-  - 231: {fileID: 1471006013}
   - 114: {fileID: 1471006012}
-  - 61: {fileID: 1471006011}
   - 232: {fileID: 1471006014}
   m_Layer: 14
   m_Name: Link1
@@ -1479,18 +1534,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &1471006011
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6103886, guid: 5d09a8ac3c8a9479c94fa800ddfe1740,
-    type: 2}
-  m_PrefabInternal: {fileID: 389953867}
-  m_GameObject: {fileID: 1471006008}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 2.25, y: 2.5}
-  m_Center: {x: 0, y: 1.25}
 --- !u!114 &1471006012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1503,21 +1546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce5c239f399a34393b26da151c1bc6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!231 &1471006013
-SpringJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 23103890, guid: 5d09a8ac3c8a9479c94fa800ddfe1740,
-    type: 2}
-  m_PrefabInternal: {fileID: 389953867}
-  m_GameObject: {fileID: 1471006008}
-  m_Enabled: 0
-  m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 1025657835}
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 2
-  m_DampingRatio: 1
-  m_Frequency: 0
 --- !u!232 &1471006014
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -2008,7 +2036,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1968623427}
   - 50: {fileID: 1968623430}
-  - 231: {fileID: 1968623429}
   - 114: {fileID: 1968623428}
   - 232: {fileID: 1968623431}
   m_Layer: 14
@@ -2042,21 +2069,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce5c239f399a34393b26da151c1bc6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!231 &1968623429
-SpringJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 23103888, guid: 5d09a8ac3c8a9479c94fa800ddfe1740,
-    type: 2}
-  m_PrefabInternal: {fileID: 389953867}
-  m_GameObject: {fileID: 1968623426}
-  m_Enabled: 0
-  m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 1471006010}
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 2
-  m_DampingRatio: 1
-  m_Frequency: 0
 --- !u!50 &1968623430
 Rigidbody2D:
   m_ObjectHideFlags: 0

@@ -1842,7 +1842,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 629633982}
-  - 114: {fileID: 629633983}
   m_Layer: 0
   m_Name: Heiro2
   m_TagString: Untagged
@@ -1863,18 +1862,6 @@ Transform:
   - {fileID: 1524825099}
   m_Father: {fileID: 0}
   m_RootOrder: 15
---- !u!114 &629633983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 629633981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potency: 1
 --- !u!1 &656623814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +1871,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 656623816}
   - 212: {fileID: 656623815}
+  - 114: {fileID: 656623817}
   m_Layer: 0
   m_Name: TheRealKFinal
   m_TagString: Untagged
@@ -1926,6 +1914,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 800911240}
   m_RootOrder: 0
+--- !u!114 &656623817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 656623814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
 --- !u!1 &667420490
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,7 +2150,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 800911240}
-  - 114: {fileID: 800911241}
   m_Layer: 0
   m_Name: Heiro4
   m_TagString: Untagged
@@ -2170,19 +2169,7 @@ Transform:
   m_Children:
   - {fileID: 656623816}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
---- !u!114 &800911241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 800911239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potency: 1
+  m_RootOrder: 6
 --- !u!1 &805299493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2626,7 +2613,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 905588588}
-  - 114: {fileID: 905588589}
   m_Layer: 0
   m_Name: Heiro3
   m_TagString: Untagged
@@ -2647,18 +2633,6 @@ Transform:
   - {fileID: 1885698839}
   m_Father: {fileID: 0}
   m_RootOrder: 14
---- !u!114 &905588589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 905588587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potency: 1
 --- !u!1001 &915372365
 Prefab:
   m_ObjectHideFlags: 0
@@ -5068,7 +5042,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1300577611}
-  - 114: {fileID: 1300577612}
   m_Layer: 0
   m_Name: Heiro1
   m_TagString: Untagged
@@ -5088,19 +5061,7 @@ Transform:
   m_Children:
   - {fileID: 1935194093}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
---- !u!114 &1300577612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1300577610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potency: 1
+  m_RootOrder: 10
 --- !u!1 &1306968695
 GameObject:
   m_ObjectHideFlags: 0
@@ -5736,6 +5697,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1466114362}
   - 212: {fileID: 1466114363}
+  - 114: {fileID: 1466114364}
   m_Layer: 0
   m_Name: TheRealMFinal
   m_TagString: Untagged
@@ -5778,6 +5740,18 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7240a10d079cdac4e8956a28ec06e1e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1466114364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466114361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
 --- !u!1001 &1473930207
 Prefab:
   m_ObjectHideFlags: 0
@@ -5883,6 +5857,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1524825099}
   - 212: {fileID: 1524825100}
+  - 114: {fileID: 1524825101}
   m_Layer: 0
   m_Name: TheRealFinalL
   m_TagString: Untagged
@@ -5925,6 +5900,18 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 176f9cb4b31217a419d2eb1e320d38d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1524825101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524825098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
 --- !u!1 &1544017797
 GameObject:
   m_ObjectHideFlags: 0
@@ -6073,7 +6060,7 @@ Transform:
   - {fileID: 1233149547}
   - {fileID: 240185588}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!61 &1564298822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6618,7 +6605,7 @@ Transform:
   - {fileID: 1577524275}
   - {fileID: 204816894}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!61 &1669516529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7420,6 +7407,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1885698839}
   - 212: {fileID: 1885698838}
+  - 114: {fileID: 1885698840}
   m_Layer: 0
   m_Name: TheRealGFinal
   m_TagString: Untagged
@@ -7462,6 +7450,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 905588588}
   m_RootOrder: 0
+--- !u!114 &1885698840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1885698837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
 --- !u!1 &1886387513
 GameObject:
   m_ObjectHideFlags: 0
@@ -7802,6 +7802,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1935194093}
   - 212: {fileID: 1935194094}
+  - 114: {fileID: 1935194095}
   m_Layer: 0
   m_Name: TheRealFFinal
   m_TagString: Untagged
@@ -7844,6 +7845,18 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aade4434d3a7c78409e84810b604f2c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1935194095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935194092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
 --- !u!1 &1935909993
 GameObject:
   m_ObjectHideFlags: 0
@@ -9373,7 +9386,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2134177164}
-  - 114: {fileID: 2134177165}
   m_Layer: 0
   m_Name: Heiro5
   m_TagString: Untagged
@@ -9393,19 +9405,7 @@ Transform:
   m_Children:
   - {fileID: 1466114362}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
---- !u!114 &2134177165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2134177163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potency: 1
+  m_RootOrder: 12
 --- !u!1 &2139894582
 GameObject:
   m_ObjectHideFlags: 0
