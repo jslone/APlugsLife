@@ -1,25 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent (typeof(RectTransform))]
-public class GUIShrink : MonoBehaviour {
-	RectTransform rtrans;
+public class Shrink : MonoBehaviour {
 
 	float speedFactor = 0.9f;
 	bool shrinking = false;
+	public Animator anim;
 
 	public float Delay = 1.5f;
 
 	// Use this for initialization
 	void Start () {
-		rtrans = GetComponent<RectTransform> ();
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(shrinking && rtrans.localScale.x > 10) {
+		if(transform.localScale.x < 0.5f) {
+			anim.SetTrigger("spark");
+			return;
+		}
+		if(shrinking) {
 			if(Delay < 0) {
-				rtrans.localScale *= speedFactor;
+				transform.localScale *= speedFactor;
 			} else {
 				Delay -= Time.deltaTime;
 			}
