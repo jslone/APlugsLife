@@ -197,9 +197,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103884}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_FixedAngle: 0
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -212,7 +212,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103886}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: .0500000007
   m_GravityScale: 4
   m_FixedAngle: 0
@@ -227,9 +227,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103888}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -242,9 +242,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103890}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -491,7 +491,7 @@ DistanceJoint2D:
   m_ConnectedRigidBody: {fileID: 5003892}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
+  m_Distance: 2
   m_MaxDistanceOnly: 0
 --- !u!232 &23264404
 DistanceJoint2D:
@@ -504,7 +504,7 @@ DistanceJoint2D:
   m_ConnectedRigidBody: {fileID: 5003888}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
+  m_Distance: 2
   m_MaxDistanceOnly: 0
 --- !u!232 &23264406
 DistanceJoint2D:
@@ -517,7 +517,7 @@ DistanceJoint2D:
   m_ConnectedRigidBody: {fileID: 5003890}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
+  m_Distance: 2
   m_MaxDistanceOnly: 0
 --- !u!1001 &100100000
 Prefab:
