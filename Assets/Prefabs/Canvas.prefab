@@ -30,6 +30,7 @@ GameObject:
   - 114: {fileID: 11413050}
   - 114: {fileID: 11413048}
   - 225: {fileID: 22513044}
+  - 114: {fileID: 11431516}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -86,9 +87,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rot: {fileID: 0}
-  RotSpeed: 360
-  Delay: 3
-  FadeSpeed: 2
 --- !u!114 &11413050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +108,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11431516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb25b8f6234ec4a128ca2dfce4bce427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Delay: 3
+  FadeSpeed: 2
 --- !u!222 &22213044
 CanvasRenderer:
   m_ObjectHideFlags: 1
