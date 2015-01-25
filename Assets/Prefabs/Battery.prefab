@@ -11,7 +11,7 @@ GameObject:
   - 50: {fileID: 5057908}
   - 58: {fileID: 5857906}
   - 212: {fileID: 21257908}
-  m_Layer: 12
+  m_Layer: 16
   m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
