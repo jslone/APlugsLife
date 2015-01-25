@@ -7,6 +7,7 @@ public class Tile : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		renderer.material.mainTextureScale = (new Vector2 (transform.localScale.x, transform.localScale.y))/5;
+		renderer.material.mainTexture.wrapMode = TextureWrapMode.Repeat;
 	}
 	
 	// Update is called once per frame

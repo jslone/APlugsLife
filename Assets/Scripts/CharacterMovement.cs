@@ -3,7 +3,6 @@ using System.Collections;
 
 [RequireComponent (typeof(Rigidbody2D),typeof(Animator))]
 public class CharacterMovement : MonoBehaviour {
-	public GameObject world;
 	public Feet feet;
 
 	public float speed = 15.0f;
@@ -41,10 +40,14 @@ public class CharacterMovement : MonoBehaviour {
 			rotation = Mathf.Lerp(rotation,Mathf.Round(rotation),rotationSpeed*Time.deltaTime);
 		}
 
+		if(Input.GetAxis("Vertical") < 0.0f) {
+			stuckTo = null;
+			transform.parent = null;
+			rigidbody2D.isKinematic = false;
+		}
+
 		int idx1 = ((Mathf.FloorToInt (rotation) % Dirs.Length) + Dirs.Length) % Dirs.Length;
 		int idx2 = (((idx1 + 1) % Dirs.Length) + Dirs.Length) % Dirs.Length;
-		Debug.Log (idx1);
-		Debug.Log (idx2);
 		transform.up = Vector3.Lerp (Dirs [idx1], Dirs [idx2], rotation - Mathf.Floor(rotation));
 
 
