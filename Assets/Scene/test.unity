@@ -775,6 +775,7 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0}
   rotationSpeed: 1
   squished: 0
+  canRotate: 1
 --- !u!50 &954574664
 Rigidbody2D:
   m_ObjectHideFlags: 0
