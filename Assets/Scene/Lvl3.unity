@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!1 &91759803
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +952,7 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0}
   rotationSpeed: 1
   squished: 0
+  canRotate: 1
 --- !u!50 &568515654
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1378,6 +1380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!1 &1165924346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,6 +1424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!23 &1165924349
 Renderer:
   m_ObjectHideFlags: 0
@@ -1600,6 +1604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!23 &1256397993
 Renderer:
   m_ObjectHideFlags: 0
@@ -1737,6 +1742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!1001 &1382877440
 Prefab:
   m_ObjectHideFlags: 0
@@ -2272,6 +2278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!23 &1601313420
 Renderer:
   m_ObjectHideFlags: 0
@@ -2601,6 +2608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!33 &1739713774
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2833,6 +2841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!1001 &1918639750
 Prefab:
   m_ObjectHideFlags: 0
@@ -2964,6 +2973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!23 &1919639647
 Renderer:
   m_ObjectHideFlags: 0
@@ -3279,6 +3289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!1 &2006010966
 GameObject:
   m_ObjectHideFlags: 0
@@ -3619,3 +3630,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
