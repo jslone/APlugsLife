@@ -5,11 +5,11 @@ using System.Collections;
 public class Pit : MonoBehaviour {
 	public float Length;
 
-	private GUIRotate gui;
+	private GUIFade gui;
 
 	// Use this for initialization
 	void Start () {
-		gui = FindObjectOfType<GUIRotate> ();
+		gui = FindObjectOfType<GUIFade> ();
 	}
 	
 	// Update is called once per frame
