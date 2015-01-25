@@ -302,7 +302,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 1950913645}
   m_GameObject: {fileID: 106194957}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8547f849dc314964be73f252e141b8f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
@@ -993,7 +993,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 363791263}
   m_GameObject: {fileID: 667420490}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8547f849dc314964be73f252e141b8f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437e8bd36710140f3b612c916a781997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: Lvl0
+  LevelName: Lvl2
   RequireGrounded: 1
 --- !u!61 &805299496
 BoxCollider2D:
@@ -1114,7 +1114,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 1270863735}
   m_GameObject: {fileID: 862258143}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8547f849dc314964be73f252e141b8f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
@@ -1410,7 +1410,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 1056523603}
   m_GameObject: {fileID: 962335231}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8547f849dc314964be73f252e141b8f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
@@ -1682,7 +1682,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 915372365}
   m_GameObject: {fileID: 1047260761}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8547f849dc314964be73f252e141b8f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
@@ -1949,7 +1949,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 1473930207}
   m_GameObject: {fileID: 1134907132}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8547f849dc314964be73f252e141b8f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
@@ -3723,7 +3723,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 1874955070}
   m_GameObject: {fileID: 1886387513}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8547f849dc314964be73f252e141b8f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
@@ -3923,7 +3923,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 482054077}
   m_GameObject: {fileID: 1935909993}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8547f849dc314964be73f252e141b8f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
@@ -4277,7 +4277,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 1244179753}
   m_GameObject: {fileID: 2036484466}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8547f849dc314964be73f252e141b8f, type: 2}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
@@ -4525,6 +4525,10 @@ Prefab:
     - target: {fileID: 426258, guid: 5a5e7ce2e4ccd4a2d90ca49896a7b6fa, type: 2}
       propertyPath: m_LocalScale.y
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426256, guid: 5a5e7ce2e4ccd4a2d90ca49896a7b6fa, type: 2}
+      propertyPath: LevelName
+      value: Lvl2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a5e7ce2e4ccd4a2d90ca49896a7b6fa, type: 2}

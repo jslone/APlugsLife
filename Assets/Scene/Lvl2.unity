@@ -2126,6 +2126,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 27.0899181
       objectReference: {fileID: 0}
+    - target: {fileID: 11426256, guid: 5a5e7ce2e4ccd4a2d90ca49896a7b6fa, type: 2}
+      propertyPath: LevelName
+      value: Lvl3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a5e7ce2e4ccd4a2d90ca49896a7b6fa, type: 2}
   m_RootGameObject: {fileID: 2135188528}
@@ -4336,7 +4340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437e8bd36710140f3b612c916a781997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: Lvl0
+  LevelName: Lvl3
   RequireGrounded: 1
 --- !u!61 &2135188531
 BoxCollider2D:
