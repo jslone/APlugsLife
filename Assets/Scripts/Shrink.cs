@@ -6,6 +6,7 @@ public class Shrink : MonoBehaviour {
 	float speedFactor = 0.9f;
 	bool shrinking = false;
 	public Animator anim;
+	public AudioSource spark;
 
 	public float Delay = 1.5f;
 
@@ -18,6 +19,7 @@ public class Shrink : MonoBehaviour {
 	void Update () {
 		if(transform.localScale.x < 0.5f) {
 			anim.SetTrigger("spark");
+			spark.Play();
 			return;
 		}
 		if(shrinking) {
