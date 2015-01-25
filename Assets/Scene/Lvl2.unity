@@ -1497,6 +1497,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 457906, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457906, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857908, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
+      propertyPath: m_Radius
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
   m_RootGameObject: {fileID: 1969516095}
@@ -2178,7 +2190,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: .100000001
+  m_Radius: 5
   m_Center: {x: 0, y: 0}
 --- !u!1001 &597672696
 Prefab:
@@ -3333,7 +3345,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: .100000001
+  m_Radius: 6
   m_Center: {x: 0, y: 0}
 --- !u!1001 &1208072455
 Prefab:
@@ -4102,7 +4114,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: .100000001
+  m_Radius: 5
   m_Center: {x: 0, y: 0}
 --- !u!1 &1444205830
 GameObject:
@@ -4481,7 +4493,7 @@ Transform:
   m_GameObject: {fileID: 1584783303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -169.899994, y: -69.9000015, z: 0}
-  m_LocalScale: {x: 90, y: 90, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1176890418}
   - {fileID: 1442842685}
@@ -4508,7 +4520,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 5f9c76fedfb9e4042a07f6ab276f0175, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!58 &1584783306
 CircleCollider2D:
@@ -5006,11 +5018,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 457906, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
       propertyPath: m_LocalScale.x
-      value: 90
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 457906, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
       propertyPath: m_LocalScale.y
-      value: 90
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 457908, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
       propertyPath: m_LocalScale.x
@@ -5028,6 +5040,13 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5815112, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
+      propertyPath: m_Radius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857908, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
+      propertyPath: m_Radius
+      value: 6
     - target: {fileID: 415112, guid: 94a2beb2620e34da198d40212b73e5e7, type: 2}
       propertyPath: m_LocalPosition.x
       value: -.611000001
@@ -6105,7 +6124,7 @@ Transform:
   m_GameObject: {fileID: 1969516095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -40, y: 30, z: 0}
-  m_LocalScale: {x: 90, y: 90, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2011255919}
   - {fileID: 593983056}
@@ -6132,7 +6151,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 5f9c76fedfb9e4042a07f6ab276f0175, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!58 &1969516098
 CircleCollider2D:
@@ -6213,7 +6232,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: .100000001
+  m_Radius: 6
   m_Center: {x: 0, y: 0}
 --- !u!1 &2021325617
 GameObject:
