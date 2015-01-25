@@ -8,7 +8,10 @@ public class CharacterMovement : MonoBehaviour {
 
 	public float speed = 15.0f;
 	public float jumpSpeed = 30.0f;
-	public float[] Rots;
+
+	public Vector3[] Dirs;
+	public float rotationSpeed = 1.0f;
+	private float rotation = 0.0f;
 
 
 	public bool squished = false;
@@ -30,12 +33,21 @@ public class CharacterMovement : MonoBehaviour {
 	void Update() {
 		anim.SetBool ("falling", !isGrounded);
 		anim.SetBool ("squished", stuckTo != null);
-		if(Input.GetKeyDown(KeyCode.Q)) {
-			world.transform.RotateAround (transform.position, Vector3.forward, -45);
+
+		float rotDelta = Input.GetAxis ("Rotation");
+		if(Mathf.Abs(rotDelta) > 0.1f) {
+			rotation += rotationSpeed * Time.deltaTime * rotDelta;
+		} else {
+			rotation = Mathf.Lerp(rotation,Mathf.Round(rotation),rotationSpeed*Time.deltaTime);
 		}
-		if(Input.GetKeyDown(KeyCode.E)) {
-			world.transform.RotateAround (transform.position, Vector3.forward, 45);
-        }
+
+		int idx1 = ((Mathf.FloorToInt (rotation) % Dirs.Length) + Dirs.Length) % Dirs.Length;
+		int idx2 = (((idx1 + 1) % Dirs.Length) + Dirs.Length) % Dirs.Length;
+		Debug.Log (idx1);
+		Debug.Log (idx2);
+		transform.up = Vector3.Lerp (Dirs [idx1], Dirs [idx2], rotation - Mathf.Floor(rotation));
+
+
 	}
 
 	// Update is called once per frame
@@ -48,12 +60,13 @@ public class CharacterMovement : MonoBehaviour {
 			transform.localScale = scale;
         }
 		if(canMove) {
-			rigidbody2D.velocity = new Vector2(speed * horizontal,
-			/*jumpSpeed * Input.GetAxis("Jump")*/rigidbody2D.velocity.y); // no more jump :'(
+			Vector2 upV = Vector2.Dot(transform.up,rigidbody2D.velocity) * transform.up;
+			rigidbody2D.velocity = horizontal * speed * (Vector2)transform.right + upV;
 		}
 		if(stuckTo) {
 			transform.rotation = Quaternion.identity;
 		}
+		Physics2D.gravity = -9.8f * transform.up;
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {

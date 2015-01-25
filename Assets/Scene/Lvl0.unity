@@ -232,7 +232,12 @@ MonoBehaviour:
   feet: {fileID: 587677840}
   speed: 15
   jumpSpeed: 30
-  rotSpeed: 1
+  Dirs:
+  - {x: 0, y: 1, z: 0}
+  - {x: 1, y: 0, z: 0}
+  - {x: 0, y: -1, z: 0}
+  - {x: -1, y: 0, z: 0}
+  rotationSpeed: 1
   squished: 0
 --- !u!58 &137447452
 CircleCollider2D:
@@ -883,6 +888,14 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11453272, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: Rots.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453272, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: Dirs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 453274, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -919,6 +932,26 @@ Prefab:
       propertyPath: world
       value: 
       objectReference: {fileID: 91759803}
+    - target: {fileID: 11453272, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: Dirs.Array.data[0].y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453272, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: Dirs.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453272, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: Dirs.Array.data[2].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453272, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: Dirs.Array.data[3].x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453272, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
   m_RootGameObject: {fileID: 137447450}
