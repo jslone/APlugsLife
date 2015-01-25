@@ -31,7 +31,7 @@ public class CharacterMovement : MonoBehaviour {
 
 	void Update() {
 		anim.SetBool ("falling", !isGrounded);
-		anim.SetBool ("squished", stuckTo != null);
+		anim.SetBool ("squished", squished);
 
 		float rotDelta = Input.GetAxis ("Rotation");
 		if(Mathf.Abs(rotDelta) > 0.1f) {
