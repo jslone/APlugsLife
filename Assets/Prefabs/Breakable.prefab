@@ -24,6 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432230}
   - 212: {fileID: 21232228}
+  - 114: {fileID: 11436116}
   m_Layer: 0
   m_Name: frayed_wire_begin_fray
   m_TagString: Untagged
@@ -40,6 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432232}
   - 212: {fileID: 21232230}
+  - 114: {fileID: 11436114}
   m_Layer: 0
   m_Name: frayed_wire_begin_fray
   m_TagString: Untagged
@@ -56,6 +58,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432234}
   - 212: {fileID: 21232232}
+  - 114: {fileID: 11436112}
   m_Layer: 0
   m_Name: frayed_wire_mid
   m_TagString: Untagged
@@ -72,6 +75,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432236}
   - 212: {fileID: 21232234}
+  - 114: {fileID: 11436106}
   m_Layer: 0
   m_Name: frayed_wire_mid
   m_TagString: Untagged
@@ -88,6 +92,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432238}
   - 212: {fileID: 21232236}
+  - 114: {fileID: 11436108}
   m_Layer: 0
   m_Name: frayed_wire_begin_fray
   m_TagString: Untagged
@@ -104,6 +109,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432240}
   - 212: {fileID: 21232238}
+  - 114: {fileID: 11436110}
   m_Layer: 0
   m_Name: frayed_wire_begin_fray
   m_TagString: Untagged
@@ -252,7 +258,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: .5}
+  m_LocalPosition: {x: -7.02481842, y: 7.85941792, z: .5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 432242}
@@ -283,6 +289,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initial: {fileID: 132242}
   final: {fileID: 132228}
+--- !u!114 &11436106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
+--- !u!114 &11436108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
+--- !u!114 &11436110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
+--- !u!114 &11436112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
+--- !u!114 &11436114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
+--- !u!114 &11436116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potency: 1
 --- !u!212 &21232228
 SpriteRenderer:
   m_ObjectHideFlags: 1

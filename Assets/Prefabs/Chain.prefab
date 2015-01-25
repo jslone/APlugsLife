@@ -26,7 +26,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403884}
-  - 212: {fileID: 21203886}
   - 50: {fileID: 5003886}
   - 231: {fileID: 23103888}
   - 114: {fileID: 11403884}
@@ -65,7 +64,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403888}
-  - 212: {fileID: 21203890}
   - 50: {fileID: 5003890}
   - 231: {fileID: 23103890}
   - 114: {fileID: 11403888}
@@ -85,7 +83,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403890}
-  - 212: {fileID: 21203892}
   - 50: {fileID: 5003892}
   - 231: {fileID: 23103892}
   - 114: {fileID: 11403890}
@@ -416,28 +413,6 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294967295
   m_UseWorldSpace: 1
---- !u!212 &21203886
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103884}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8e041fa67aa81479aae1171c5b98b3a2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21203888
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -459,50 +434,6 @@ SpriteRenderer:
   m_SortingLayerID: 647762409
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ef698eb7733eb4880a449d06d55fc122, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!212 &21203890
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103888}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8e041fa67aa81479aae1171c5b98b3a2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!212 &21203892
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103890}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8e041fa67aa81479aae1171c5b98b3a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!231 &23103888
 SpringJoint2D:
