@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 0c9f9509c59014b67b04699b303005ca
+guid: 9fde702f076dfec4c9ccd93f6e607569
 TextureImporter:
   fileIDToRecycleName:
-    21300000: plug_attach_0
-    21300002: plug_attach_1
-    21300004: plug_attach_2
-    21300006: plug_attach_3
+    21300000: male_spritesheet_0
+    21300002: male_spritesheet_1
+    21300004: male_spritesheet_2
+    21300006: male_spritesheet_3
+    21300008: male_spritesheet_4
+    21300010: male_spritesheet_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -47,44 +49,64 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: plug_attach_0
+    - name: male_spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1656
-        height: 2004
-      alignment: 2
+        y: 2006
+        width: 1654
+        height: 2000
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: plug_attach_1
+    - name: male_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1656
-        y: 0
-        width: 1656
-        height: 2004
-      alignment: 2
+        x: 1654
+        y: 2006
+        width: 1654
+        height: 2000
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: plug_attach_2
+    - name: male_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 3312
-        y: 0
-        width: 1656
-        height: 2004
-      alignment: 2
+        x: 3308
+        y: 2006
+        width: 1654
+        height: 2000
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: plug_attach_3
+    - name: male_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 4968
-        y: 0
-        width: 1656
-        height: 2004
-      alignment: 2
+        x: 0
+        y: 6
+        width: 1654
+        height: 2000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: male_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 6
+        width: 1654
+        height: 2000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: male_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 6
+        width: 1654
+        height: 2000
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 

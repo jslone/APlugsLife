@@ -29,6 +29,7 @@ GameObject:
   - 50: {fileID: 5003886}
   - 231: {fileID: 23103888}
   - 114: {fileID: 11403884}
+  - 232: {fileID: 23264406}
   m_Layer: 14
   m_Name: Link0
   m_TagString: Untagged
@@ -68,6 +69,7 @@ GameObject:
   - 231: {fileID: 23103890}
   - 114: {fileID: 11403888}
   - 61: {fileID: 6103886}
+  - 232: {fileID: 23264402}
   m_Layer: 14
   m_Name: Link1
   m_TagString: Untagged
@@ -86,6 +88,7 @@ GameObject:
   - 50: {fileID: 5003892}
   - 231: {fileID: 23103892}
   - 114: {fileID: 11403890}
+  - 232: {fileID: 23264404}
   m_Layer: 14
   m_Name: Link2
   m_TagString: Untagged
@@ -117,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103882}
   m_LocalRotation: {x: 0, y: 0, z: -.707106829, w: .707106709}
-  m_LocalPosition: {x: -1.10000002, y: 6.90999985, z: 0}
+  m_LocalPosition: {x: -2.73270607, y: 7.99850941, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children:
   - {fileID: 403884}
@@ -146,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 103886}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: -1.62920685e-07}
   m_LocalPosition: {x: 0, y: 9, z: 0}
-  m_LocalScale: {x: .5, y: .5, z: 1}
+  m_LocalScale: {x: .400000006, y: .400000006, z: 1}
   m_Children:
   - {fileID: 403892}
   m_Father: {fileID: 403882}
@@ -182,7 +185,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalPosition: {x: 0, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 403886}
@@ -194,9 +197,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103884}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_FixedAngle: 0
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -209,9 +212,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103886}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -224,9 +227,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103888}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -239,9 +242,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103890}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -279,7 +282,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 6, y: 15}
-  m_Center: {x: 0, y: 10}
+  m_Center: {x: 0, y: 5}
 --- !u!114 &11403884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -441,16 +444,44 @@ SpringJoint2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103884}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CollideConnected: 0
   m_ConnectedRigidBody: {fileID: 5003890}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
+  m_Distance: 2
   m_DampingRatio: 1
-  m_Frequency: 1
+  m_Frequency: 0
 --- !u!231 &23103890
 SpringJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103888}
+  m_Enabled: 0
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 5003892}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_Distance: 2
+  m_DampingRatio: 1
+  m_Frequency: 0
+--- !u!231 &23103892
+SpringJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103890}
+  m_Enabled: 0
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 5003888}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_Distance: 2
+  m_DampingRatio: 1
+  m_Frequency: 0
+--- !u!232 &23264402
+DistanceJoint2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -460,11 +491,10 @@ SpringJoint2D:
   m_ConnectedRigidBody: {fileID: 5003892}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
-  m_DampingRatio: 1
-  m_Frequency: 1
---- !u!231 &23103892
-SpringJoint2D:
+  m_Distance: 2
+  m_MaxDistanceOnly: 0
+--- !u!232 &23264404
+DistanceJoint2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -474,9 +504,21 @@ SpringJoint2D:
   m_ConnectedRigidBody: {fileID: 5003888}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
-  m_DampingRatio: 1
-  m_Frequency: 1
+  m_Distance: 2
+  m_MaxDistanceOnly: 0
+--- !u!232 &23264406
+DistanceJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103884}
+  m_Enabled: 1
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 5003890}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_Distance: 2
+  m_MaxDistanceOnly: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
