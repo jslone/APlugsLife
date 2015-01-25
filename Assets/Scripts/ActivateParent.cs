@@ -14,6 +14,8 @@ public class ActivateParent : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		transform.parent.gameObject.rigidbody2D.isKinematic = false;
+    if (other.CompareTag("Player")) {
+      transform.parent.gameObject.rigidbody2D.isKinematic = false;
+    }
 	}
 }
