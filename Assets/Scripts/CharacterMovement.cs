@@ -33,6 +33,7 @@ public class CharacterMovement : MonoBehaviour {
 	void Update() {
 		anim.SetBool ("falling", !isGrounded);
 		anim.SetBool ("squished", squished);
+		anim.SetBool ("hanging", stuckTo);
 
 		float rotDelta = Input.GetAxis ("Rotation");
 		if(canRotate && Mathf.Abs(rotDelta) > 0.1f) {
@@ -47,15 +48,24 @@ public class CharacterMovement : MonoBehaviour {
 			rigidbody2D.isKinematic = false;
 		}
 
+
 		int idx1 = ((Mathf.FloorToInt (rotation) % Dirs.Length) + Dirs.Length) % Dirs.Length;
 		int idx2 = (((idx1 + 1) % Dirs.Length) + Dirs.Length) % Dirs.Length;
-		transform.up = Vector3.Lerp (Dirs [idx1], Dirs [idx2], rotation - Mathf.Floor(rotation));
+		Vector3 dir = Vector3.Lerp (Dirs [idx1], Dirs [idx2], rotation - Mathf.Floor(rotation));
+
+		if(!stuckTo) {
+			transform.up = dir;
+		} else {
+			Physics2D.gravity = -dir;
+		}
+
+		ColorAngle.index = (rotation / Dirs.Length) - Mathf.Floor(rotation / Dirs.Length);
+
 		if(Vector3.Dot(transform.forward,Vector3.forward) < 0.0f) {
 			Vector3 rot = transform.localEulerAngles;
 			rot.y = 0;
 			transform.localEulerAngles = rot;
 		}
-		ColorAngle.index = transform.localEulerAngles.z / 360.0f;
 
 		if(Input.GetKeyDown(KeyCode.Escape)) {
 			Application.LoadLevel("Title");
@@ -76,10 +86,12 @@ public class CharacterMovement : MonoBehaviour {
 			Vector2 upV = Vector2.Dot(transform.up,rigidbody2D.velocity) * transform.up;
 			rigidbody2D.velocity = horizontal * speed * (Vector2)transform.right + upV;
 		}
-		if(stuckTo) {
+		/*if(stuckTo) {
 			transform.position = stuckTo.position;
+		}*/
+		if(!stuckTo) {
+			Physics2D.gravity = -9.8f * transform.up;
 		}
-		Physics2D.gravity = -9.8f * transform.up;
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
@@ -102,8 +114,8 @@ public class CharacterMovement : MonoBehaviour {
 
 	public void StickTo(Transform other) {
 		stuckTo = other;
-		//transform.parent = other;
 		transform.position = stuckTo.position;
+		transform.parent = stuckTo;
 		rigidbody2D.isKinematic = true;
 	}
 
