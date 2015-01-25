@@ -7,18 +7,18 @@ public class LoadLevel : MonoBehaviour {
 	public bool RequireGrounded;
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if(!RequireGrounded || 
+    if (other.CompareTag("Player") && (!RequireGrounded || 
 		   (other.gameObject.GetComponent<CharacterMovement>().isGrounded 
-		 	&& Mathf.Abs(Vector3.Dot(other.transform.up,transform.up)) < 0.1f)) {
+		 	&& Mathf.Abs(Vector3.Dot(other.transform.up,transform.up)) < 0.1f))) {
 			Application.LoadLevel (LevelName);
 		}
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
-		if(!RequireGrounded || 
+		if (other.CompareTag("Player") && (!RequireGrounded || 
 		   (other.gameObject.GetComponent<CharacterMovement>().isGrounded 
-			&& Mathf.Abs(Vector3.Dot(other.transform.up,transform.up)) < 0.1f)) {
+			&& Mathf.Abs(Vector3.Dot(other.transform.up,transform.up)) < 0.1f))) {
 			Application.LoadLevel (LevelName);
-        }
     }
+  }
 }

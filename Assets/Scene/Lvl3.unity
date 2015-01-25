@@ -895,7 +895,7 @@ GameObject:
   - 58: {fileID: 568515650}
   m_Layer: 10
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1841,7 +1841,7 @@ Transform:
   m_PrefabParentObject: {fileID: 415810, guid: 4b27a7640ec6f499b9b36fc1529affc4, type: 2}
   m_PrefabInternal: {fileID: 1786418852}
   m_GameObject: {fileID: 1415873823}
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalRotation: {x: 0, y: 0, z: .707106888, w: .707106769}
   m_LocalPosition: {x: -66, y: 12, z: 0}
   m_LocalScale: {x: 12, y: 2, z: 1}
   m_Children: []
@@ -3187,6 +3187,10 @@ Prefab:
     - target: {fileID: 2051834, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
       propertyPath: orthographic size
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 151836, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}

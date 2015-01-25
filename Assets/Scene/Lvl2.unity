@@ -4937,7 +4937,7 @@ GameObject:
   - 58: {fileID: 1857246323}
   m_Layer: 10
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5416,6 +5416,10 @@ Prefab:
     - target: {fileID: 2051834, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
       propertyPath: orthographic size
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 151836, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}

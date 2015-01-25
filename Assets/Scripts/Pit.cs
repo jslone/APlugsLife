@@ -19,14 +19,14 @@ public class Pit : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 		other.transform.position += Length * transform.up;
-		if(gui) {
+		if (gui && other.CompareTag ("Player")) {
 			gui.Alert();
 		}
 	}
 
 	void OnTriggerStay2D(Collider2D other) {
 		other.transform.position += Length * transform.up;
-		if(gui) {
+		if (gui && other.CompareTag ("Player")) {
 			gui.Alert();
 		}
 	}
