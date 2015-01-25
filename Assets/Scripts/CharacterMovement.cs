@@ -18,7 +18,8 @@ public class CharacterMovement : MonoBehaviour {
 
 	private Transform stuckTo = null;
 
-	public bool canMove { get { return !feet.isStuck && !squished; } }
+	public bool inputDisabled = false;
+	public bool canMove { get { return !feet.isStuck && !squished && !inputDisabled; } }
 	public bool isGrounded { get { return feet.isGrounded; } }
 	public bool canRotate = true;
 
@@ -34,18 +35,21 @@ public class CharacterMovement : MonoBehaviour {
 		anim.SetBool ("falling", !isGrounded);
 		anim.SetBool ("squished", squished);
 		anim.SetBool ("hanging", stuckTo);
+		anim.SetFloat ("speed", Mathf.Abs(Vector2.Dot(rigidbody2D.velocity,transform.right)));
 
-		float rotDelta = Input.GetAxis ("Rotation");
-		if(canRotate && Mathf.Abs(rotDelta) > 0.1f) {
-			rotation += rotationSpeed * Time.deltaTime * rotDelta;
-		} else {
-			rotation = Mathf.Lerp(rotation,Mathf.Round(rotation),rotationSpeed*Time.deltaTime);
-		}
+		if(!inputDisabled) {
+			float rotDelta = Input.GetAxis ("Rotation");
+			if(canRotate && Mathf.Abs(rotDelta) > 0.1f) {
+				rotation += rotationSpeed * Time.deltaTime * rotDelta;
+			} else {
+				rotation = Mathf.Lerp(rotation,Mathf.Round(rotation),rotationSpeed*Time.deltaTime);
+			}
 
-		if(Input.GetAxis("Vertical") < 0.0f) {
-			stuckTo = null;
-			transform.parent = null;
-			rigidbody2D.isKinematic = false;
+			if(Input.GetAxis("Vertical") < 0.0f) {
+				stuckTo = null;
+				transform.parent = null;
+				rigidbody2D.isKinematic = false;
+			}
 		}
 
 
@@ -75,22 +79,24 @@ public class CharacterMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		float horizontal = Input.GetAxis("Horizontal");
-		anim.SetFloat ("speed", Mathf.Abs(horizontal));
-		if(Mathf.Abs(horizontal) > 0.1f) {
-			Vector3 scale = transform.localScale;
-			scale.x = horizontal / Mathf.Abs (horizontal) * Mathf.Abs(scale.x);
-			transform.localScale = scale;
-        }
-		if(canMove) {
-			Vector2 upV = Vector2.Dot(transform.up,rigidbody2D.velocity) * transform.up;
-			rigidbody2D.velocity = horizontal * speed * (Vector2)transform.right + upV;
-		}
-		/*if(stuckTo) {
-			transform.position = stuckTo.position;
-		}*/
-		if(!stuckTo) {
-			Physics2D.gravity = -9.8f * transform.up;
+		if(!inputDisabled) {
+			float horizontal = Input.GetAxis("Horizontal");
+
+			if(Mathf.Abs(horizontal) > 0.1f) {
+				Vector3 scale = transform.localScale;
+				scale.x = horizontal / Mathf.Abs (horizontal) * Mathf.Abs(scale.x);
+				transform.localScale = scale;
+	        }
+			if(canMove) {
+				Vector2 upV = Vector2.Dot(transform.up,rigidbody2D.velocity) * transform.up;
+				rigidbody2D.velocity = horizontal * speed * (Vector2)transform.right + upV;
+			}
+			/*if(stuckTo) {
+				transform.position = stuckTo.position;
+			}*/
+			if(!stuckTo) {
+				Physics2D.gravity = -9.8f * transform.up;
+			}
 		}
 	}
 
