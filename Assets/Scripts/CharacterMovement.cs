@@ -55,6 +55,7 @@ public class CharacterMovement : MonoBehaviour {
 			rot.y = 0;
 			transform.localEulerAngles = rot;
 		}
+		ColorAngle.index = transform.localEulerAngles.z / 360.0f;
 
 	}
 

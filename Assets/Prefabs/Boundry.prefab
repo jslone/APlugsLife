@@ -12,6 +12,7 @@ GameObject:
   - 33: {fileID: 3390250}
   - 23: {fileID: 2310670}
   - 114: {fileID: 11450324}
+  - 114: {fileID: 11416556}
   m_Layer: 15
   m_Name: Boundry
   m_TagString: Untagged
@@ -69,6 +70,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
+--- !u!114 &11416556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11450324
 MonoBehaviour:
   m_ObjectHideFlags: 1
