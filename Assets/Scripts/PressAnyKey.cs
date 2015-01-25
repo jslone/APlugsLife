@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class PressAnyKey : MonoBehaviour {
+  public string LevelName;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +14,7 @@ public class PressAnyKey : MonoBehaviour {
     if (Input.GetKeyDown(KeyCode.Escape)) {
       Application.Quit();
     } else if (Input.anyKey) {
-      Application.LoadLevel("Lvl0");
+      Application.LoadLevel(LevelName);
     }
 	
 	}
