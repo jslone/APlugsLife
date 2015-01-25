@@ -208,6 +208,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23264402, guid: 5d09a8ac3c8a9479c94fa800ddfe1740, type: 2}
+      propertyPath: m_Distance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23264404, guid: 5d09a8ac3c8a9479c94fa800ddfe1740, type: 2}
+      propertyPath: m_Distance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 23264406, guid: 5d09a8ac3c8a9479c94fa800ddfe1740, type: 2}
+      propertyPath: m_Distance
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d09a8ac3c8a9479c94fa800ddfe1740, type: 2}
   m_RootGameObject: {fileID: 1449145294}
@@ -800,7 +812,7 @@ DistanceJoint2D:
   m_ConnectedRigidBody: {fileID: 1844497189}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
+  m_Distance: 2
   m_MaxDistanceOnly: 0
 --- !u!1 &1084046688
 GameObject:
@@ -1529,7 +1541,7 @@ DistanceJoint2D:
   m_ConnectedRigidBody: {fileID: 1025657835}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
+  m_Distance: 2
   m_MaxDistanceOnly: 0
 --- !u!1 &1512814691
 GameObject:
@@ -2084,5 +2096,5 @@ DistanceJoint2D:
   m_ConnectedRigidBody: {fileID: 1471006010}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 1
+  m_Distance: 2
   m_MaxDistanceOnly: 0
