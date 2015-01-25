@@ -404,6 +404,7 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0}
   rotationSpeed: 1
   squished: 0
+  inputDisabled: 0
   canRotate: 1
 --- !u!58 &137447452
 CircleCollider2D:

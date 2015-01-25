@@ -226,6 +226,7 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0}
   rotationSpeed: 1
   squished: 0
+  inputDisabled: 0
   canRotate: 1
 --- !u!114 &11451836
 MonoBehaviour:
