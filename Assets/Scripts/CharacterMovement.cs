@@ -57,6 +57,10 @@ public class CharacterMovement : MonoBehaviour {
 		}
 		ColorAngle.index = transform.localEulerAngles.z / 360.0f;
 
+		if(Input.GetKeyDown(KeyCode.Escape)) {
+			Application.LoadLevel("Title");
+		}
+
 	}
 
 	// Update is called once per frame
