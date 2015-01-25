@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &115112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 415112}
+  - 58: {fileID: 5815112}
+  - 114: {fileID: 11415112}
+  m_Layer: 16
+  m_Name: ActivateTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &157906
 GameObject:
   m_ObjectHideFlags: 0
@@ -35,6 +52,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &415112
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 457906}
+  m_RootOrder: 1
 --- !u!4 &457906
 Transform:
   m_ObjectHideFlags: 1
@@ -42,10 +71,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 157906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 2, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: -40, y: 30, z: 0}
+  m_LocalScale: {x: 90, y: 90, z: 1}
   m_Children:
   - {fileID: 457908}
+  - {fileID: 415112}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &457908
@@ -56,7 +86,7 @@ Transform:
   m_GameObject: {fileID: 157908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .835317612, y: .835317612, z: .835317612}
   m_Children: []
   m_Father: {fileID: 457906}
   m_RootOrder: 0
@@ -75,6 +105,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!58 &5815112
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115112}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .100000001
+  m_Center: {x: 0, y: 0}
 --- !u!58 &5857906
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -97,6 +138,17 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_Radius: .100000001
   m_Center: {x: 0, y: 0}
+--- !u!114 &11415112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f28847ca83fe4d25b27c2c7e920f5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11457908
 MonoBehaviour:
   m_ObjectHideFlags: 1

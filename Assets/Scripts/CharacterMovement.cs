@@ -67,7 +67,7 @@ public class CharacterMovement : MonoBehaviour {
 			rigidbody2D.velocity = horizontal * speed * (Vector2)transform.right + upV;
 		}
 		if(stuckTo) {
-			transform.rotation = Quaternion.identity;
+			transform.position = stuckTo.position;
 		}
 		Physics2D.gravity = -9.8f * transform.up;
 	}
@@ -92,8 +92,8 @@ public class CharacterMovement : MonoBehaviour {
 
 	public void StickTo(Transform other) {
 		stuckTo = other;
-		transform.parent = other;
-		transform.localPosition = Vector3.zero;
+		//transform.parent = other;
+		transform.position = stuckTo.position;
 		rigidbody2D.isKinematic = true;
 	}
 
