@@ -136,7 +136,6 @@ GameObject:
   - 4: {fileID: 432244}
   - 61: {fileID: 6132228}
   - 114: {fileID: 11432228}
-  - 114: {fileID: 11414162}
   m_Layer: 0
   m_Name: Breakable
   m_TagString: Untagged
@@ -271,17 +270,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 40, y: 5}
   m_Center: {x: 20, y: 0}
---- !u!114 &11414162
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b467beb7013f14cf8ae81d9f4aa035b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11432228
 MonoBehaviour:
   m_ObjectHideFlags: 1
