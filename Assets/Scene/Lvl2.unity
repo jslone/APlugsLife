@@ -452,7 +452,7 @@ Transform:
   - {fileID: 692207799}
   - {fileID: 659843910}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
 --- !u!61 &43014290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1944,6 +1944,7 @@ GameObject:
   - 114: {fileID: 392232073}
   - 114: {fileID: 392232072}
   - 225: {fileID: 392232071}
+  - 114: {fileID: 392232075}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -2023,6 +2024,20 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 539714262}
   m_GameObject: {fileID: 392232069}
+--- !u!114 &392232075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11431516, guid: dd07c596707cf4169b80781bfaa1c769,
+    type: 2}
+  m_PrefabInternal: {fileID: 539714262}
+  m_GameObject: {fileID: 392232069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb25b8f6234ec4a128ca2dfce4bce427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Delay: 3
+  FadeSpeed: 2
 --- !u!1001 &439170120
 Prefab:
   m_ObjectHideFlags: 0
@@ -2635,7 +2650,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22413044, guid: dd07c596707cf4169b80781bfaa1c769, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 22413044, guid: dd07c596707cf4169b80781bfaa1c769, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -3521,7 +3536,7 @@ Transform:
   m_Children:
   - {fileID: 177763771}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
 --- !u!1 &764258014
 GameObject:
   m_ObjectHideFlags: 0
@@ -4481,7 +4496,7 @@ Transform:
   - {fileID: 235795960}
   - {fileID: 499744695}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!61 &971831547
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6176,7 +6191,7 @@ Transform:
   - {fileID: 1350104114}
   - {fileID: 1995245930}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!61 &1425191851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8562,6 +8577,7 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0}
   rotationSpeed: 1
   squished: 0
+  inputDisabled: 0
   canRotate: 1
 --- !u!50 &1857246327
 Rigidbody2D:
@@ -9060,6 +9076,10 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 451836, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0b19e8b72e294736bf1b93084e0d7ea, type: 2}
   m_RootGameObject: {fileID: 1857246321}
@@ -9548,7 +9568,7 @@ Transform:
   m_Children:
   - {fileID: 200123357}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
 --- !u!1 &2011255918
 GameObject:
   m_ObjectHideFlags: 0
