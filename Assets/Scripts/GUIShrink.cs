@@ -17,7 +17,7 @@ public class GUIShrink : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(shrinking && rtrans.localScale.x > 10) {
+		if(shrinking && rtrans.localScale.x > 0.5f) {
 			if(Delay < 0) {
 				rtrans.localScale *= speedFactor;
 			} else {
