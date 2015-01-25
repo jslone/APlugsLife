@@ -195,6 +195,7 @@ Transform:
   - {fileID: 1373079171}
   - {fileID: 1518881430}
   - {fileID: 1995742690}
+  - {fileID: 541836545}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!82 &91759805
@@ -297,6 +298,7 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0}
   rotationSpeed: 1
   squished: 0
+  canRotate: 1
 --- !u!58 &137447452
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -430,6 +432,58 @@ Prefab:
   m_RootGameObject: {fileID: 2077149075}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &541836544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 541836545}
+  - 61: {fileID: 541836547}
+  - 114: {fileID: 541836546}
+  m_Layer: 13
+  m_Name: RotTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &541836545
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541836544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 8, z: 1}
+  m_Children: []
+  m_Father: {fileID: 91759804}
+  m_RootOrder: 7
+--- !u!114 &541836546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541836544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6891fb1e4acd7455a8edbf1f6973df05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 137447451}
+--- !u!61 &541836547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541836544}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &587677837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!23 &1805688592
 Renderer:
   m_ObjectHideFlags: 0
@@ -1443,6 +1498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!23 &2077149079
 Renderer:
   m_ObjectHideFlags: 0
@@ -1527,6 +1583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b797a6802904df98eaef6de0de7dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scale: 5
 --- !u!23 &2114894681
 Renderer:
   m_ObjectHideFlags: 0

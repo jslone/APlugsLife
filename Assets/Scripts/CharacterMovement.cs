@@ -20,6 +20,7 @@ public class CharacterMovement : MonoBehaviour {
 
 	public bool canMove { get { return !feet.isStuck && !squished; } }
 	public bool isGrounded { get { return feet.isGrounded; } }
+	public bool canRotate = true;
 
 	private Animator anim;
 
@@ -34,7 +35,7 @@ public class CharacterMovement : MonoBehaviour {
 		anim.SetBool ("squished", squished);
 
 		float rotDelta = Input.GetAxis ("Rotation");
-		if(Mathf.Abs(rotDelta) > 0.1f) {
+		if(canRotate && Mathf.Abs(rotDelta) > 0.1f) {
 			rotation += rotationSpeed * Time.deltaTime * rotDelta;
 		} else {
 			rotation = Mathf.Lerp(rotation,Mathf.Round(rotation),rotationSpeed*Time.deltaTime);

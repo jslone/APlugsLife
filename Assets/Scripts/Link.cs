@@ -14,9 +14,11 @@ public class Link : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 dir = next.position - transform.position;
-		scale.y = dir.magnitude / 1.25f;
-		transform.localScale = scale;
-		transform.up = dir;
+		if(next) {
+			Vector3 dir = next.position - transform.position;
+			scale.y = dir.magnitude;
+			transform.localScale = scale;
+			transform.up = dir;
+		}
 	}
 }
