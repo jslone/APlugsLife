@@ -27,7 +27,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 403884}
   - 50: {fileID: 5003886}
-  - 231: {fileID: 23103888}
   - 114: {fileID: 11403884}
   - 232: {fileID: 23264406}
   m_Layer: 14
@@ -66,9 +65,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 403888}
   - 50: {fileID: 5003890}
-  - 231: {fileID: 23103890}
   - 114: {fileID: 11403888}
-  - 61: {fileID: 6103886}
   - 232: {fileID: 23264402}
   m_Layer: 14
   m_Name: Link1
@@ -86,7 +83,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 403890}
   - 50: {fileID: 5003892}
-  - 231: {fileID: 23103892}
   - 114: {fileID: 11403890}
   - 232: {fileID: 23264404}
   m_Layer: 14
@@ -261,17 +257,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 6, y: 14}
   m_Center: {x: 0, y: 0}
---- !u!61 &6103886
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103888}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 2.25, y: 2.5}
-  m_Center: {x: 0, y: 1.25}
 --- !u!61 &6103892
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -438,48 +423,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ef698eb7733eb4880a449d06d55fc122, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!231 &23103888
-SpringJoint2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103884}
-  m_Enabled: 0
-  m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 5003890}
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 2
-  m_DampingRatio: 1
-  m_Frequency: 0
---- !u!231 &23103890
-SpringJoint2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103888}
-  m_Enabled: 0
-  m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 5003892}
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 2
-  m_DampingRatio: 1
-  m_Frequency: 0
---- !u!231 &23103892
-SpringJoint2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103890}
-  m_Enabled: 0
-  m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 5003888}
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_Distance: 2
-  m_DampingRatio: 1
-  m_Frequency: 0
 --- !u!232 &23264402
 DistanceJoint2D:
   m_ObjectHideFlags: 1
