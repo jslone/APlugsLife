@@ -18,8 +18,8 @@ public class Shrink : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(transform.localScale.x < 0.5f) {
-			anim.SetTrigger("spark");
-			spark.Play();
+			if(anim) anim.SetTrigger("spark");
+			if(spark && !spark.isPlaying) spark.Play();
 			return;
 		}
 		if(shrinking) {
